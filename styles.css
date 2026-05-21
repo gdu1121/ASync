@@ -1,0 +1,222 @@
+/* Asterisk means all elements on the page */
+*{
+    /*Removes default spacing outside of elements*/
+    margin: 0;
+    /*Removes spacing inside of elements*/
+    padding: 0;
+    box-sizing: border-box;
+    /*Sets the default text font*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Produces a white background*/
+body{
+    background:#f5f5f5;
+}
+/* ---------- NAVBAR ---------- */
+nav{
+    /*Turns the nav element into a flex container, allowing for easier arrangement*/
+    display: flex;
+    /*Pushes elements to opposite ends*/
+    justify-content: space-between;
+    /*Centers items vertically*/
+    align-items: center;
+    /*Adds padding around the navigation bar. 20px on top and bottom, 50px on left and right*/
+    padding: 20px 50px;
+    /*Makes the navigation bar have a pink background*/
+    background:#ff4d6d;
+    /*Sets the text color to white*/
+    color: white;
+}
+/*Stylizes the main heading in the navigation bar*/
+nav h1{
+    /*Sets the font size of the heading to 28 pixels*/
+    font-size: 28px;
+}
+/*Stylizes the navigation menu*/
+nav ul{
+    /*Removes default list styling*/
+    list-style: none;
+    /*Makes menu items display horizontally*/
+    display: flex;
+    /*20px of space between each menu item*/
+    gap: 20px;
+}
+/*Stylizes the links in the navigation menu*/
+nav a{
+    /*Removes underline from links*/
+    text-decoration: none;
+    /*White text and bold letters*/
+    color: white;
+    font-weight: bold;
+}
+/*Stylizes the hero section*/
+.hero{
+    /*Sets the height of the hero section to 100% of the viewport height*/
+    min-height: 100vh;
+    /*Adds padding to the bottom of the hero section*/
+    padding-bottom: 200px;
+    /*Centers content both horizontally and vertically*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /*Centers text within the hero section*/
+    text-align:center;
+    /*Background of the hero section*/
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(Image.webp);
+    /*Ensures the background image covers the entire hero section*/
+    background-size:cover;
+    /*Sets the text color to white*/
+    color:white;
+}
+/*Stylizes the main heading in the hero section*/
+.hero h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+/*Stylizes the paragraph in the hero section*/
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+/* ---------- SIGNUP CARD ---------- */
+
+.signup{
+
+background:white;
+padding:40px;
+width:320px;
+
+margin:auto;
+margin-top:-100px;
+
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+text-align:center;
+}
+
+.signup h3{
+margin-bottom:20px;
+}
+
+.signup input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+.signup button{
+width:100%;
+padding:12px;
+background:#ff4d6d;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+/* ---------- FEATURES SECTION ---------- */
+
+.features{
+
+display:flex;
+justify-content:center;
+gap:40px;
+
+padding:80px 40px;
+flex-wrap:wrap;
+}
+
+.feature{
+
+background:white;
+padding:30px;
+border-radius:12px;
+width:260px;
+
+text-align:center;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.feature h3{
+margin-bottom:15px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode nav{
+    background:#222;
+}
+
+.dark-mode .signup,
+.dark-mode .feature{
+    background:#1e1e1e;
+    color:white;
+}
+
+/* BUTTONS */
+
+#darkModeBtn{
+    padding:10px 16px;
+    border:none;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+/* PASSWORD CONTAINER */
+
+.password-container{
+    display:flex;
+    gap:10px;
+    margin:10px 0;
+}
+
+
+/* MESSAGE */
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* SUCCESS */
+
+.success{
+    color:green;
+}
+
+/* ERROR */
+
+.error{
+    color:red;
+}
+
+/* PASSWORD STRENGTH */
+
+#strengthText{
+    display:block;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+/* FEATURE ANIMATION */
+
+.feature{
+    transition:transform 0.3s ease;
+}
+
+.feature:hover{
+    transform:translateY(-10px) scale(1.03);
+}

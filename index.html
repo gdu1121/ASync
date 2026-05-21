@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Allows for Emojis, symbols, and other Unicode characters -->
+        <meta charset="UTF-8">
+        <!-- Ensures proper rendering on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the webpage -->
+        <title>ASync</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <h1>ASync</h1>
+        <!-- Unordered List -->
+        <ul>
+            <!-- Navigation Links with href attributes (hyperlinks)-->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#signup">Signup</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+        <button id="darkModeBtn">Dark Mode</button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class = "hero" id = "home">
+
+            <div>
+                <!-- Main Heading -->
+                <h1>Connected By What You Love.</h1>
+                <!-- Subheading -->
+                <p>Meet new people, discover shared interests, and figure out what to do next.</p>
+            </div>
+        </section>
+
+        <!-- Sign Up -->
+         <div class = "signup" id = "signup">
+            <h3>Create Account</h3>
+
+            <input type="text" id="name" placeholder="Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password">
+                <button id="togglePassword">Show</button>
+            </div>
+
+            <div class="strength">
+                <span id="strengthText"></span>
+            </div>
+
+            <button id="signupBtn">Join Now</button>
+
+            <p id="message"></p>
+
+        </div>
+        
+         <!-- Features Section -->
+          <section class = "features" id = "features">
+            <div class="feature">
+                <h3>Interest Syncing</h3>
+                <p>Match with people who share your hobbies, passions, and lifestyle.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Plan Experiences</h3>
+                <p>Turn shared interests into real activities and events.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Social & Dating</h3>
+                <p>Meet friends, activity partners, or romantic connections.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Verified Profiles</h3>
+                <p>Connect confidently with real people using profile verification.</p>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

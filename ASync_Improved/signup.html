@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta
+      content="ASync helps you find people through shared interests, intentions, and experiences."
+      name="description"
+    />
+    <title>ASync | Join</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><button
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="menu-btn"
+        id="menuBtn"
+      >
+        ☰
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="home.html">Home</a><a href="friends.html">Friends</a
+        ><a href="dating.html">Dating</a
+        ><a href="communities.html">Communities</a
+        ><a href="messages.html">Messages</a><a href="features.html">Features</a
+        ><a aria-current="page" href="signup.html">Join</a
+        ><button
+          aria-label="Toggle dark mode"
+          class="theme-btn"
+          id="darkModeBtn"
+        >
+          ☾
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="section signup-section" id="signup">
+        <div class="signup-copy">
+          <span class="kicker">JOIN YOUR COMMUNITY</span>
+          <h2>Make room for <em>every connection.</em></h2>
+          <p>
+            Try the prototype signup and build a sample profile. Choose whether
+            you want to explore friendships, dating, or both. Demo details stay
+            in this browser.
+          </p>
+          <div class="trust-points">
+            <div class="trust-item">
+              <span>✦</span>
+              <div>
+                <strong>Profile with purpose</strong>
+                <small>Share your vibe and interest mix.</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span>♡</span>
+              <div>
+                <strong>Intentions stay clear</strong>
+                <small>Friendship, dating, or both.</small>
+              </div>
+            </div>
+            <div class="trust-item">
+              <span>☕</span>
+              <div>
+                <strong>Easy conversation starters</strong>
+                <small
+                  >Built around shared interests and real-life moments.</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="privacy-note">
+            🔒 Prototype only — no real accounts or online matching yet.
+          </div>
+        </div>
+        <div class="signup" id="signupCard">
+          <h3>Create your demo profile</h3>
+          <p class="form-subtitle">A little about you goes a long way.</p>
+          <form id="signupForm" novalidate="">
+            <label for="name">Display name</label
+            ><input
+              autocomplete="name"
+              id="name"
+              placeholder="Your name"
+              type="text"
+            /><label for="email">Email</label
+            ><input
+              autocomplete="email"
+              id="email"
+              placeholder="you@example.com"
+              type="email"
+            />
+            <fieldset class="intent-fieldset">
+              <legend>I’m here for</legend>
+              <label
+                ><input checked="" id="intentFriends" type="checkbox" />
+                Friendships</label
+              ><label><input id="intentDating" type="checkbox" /> Dating</label>
+            </fieldset>
+            <label for="password"
+              >Password <small>(demo validation only)</small></label
+            >
+            <div class="password-container">
+              <input
+                autocomplete="new-password"
+                id="password"
+                placeholder="At least 8 characters"
+                type="password"
+              /><button id="togglePassword" type="button">Show</button>
+            </div>
+            <span aria-live="polite" id="strengthText"></span
+            ><button class="btn primary full" id="signupBtn" type="submit">
+              Create demo profile ↗
+            </button>
+            <p id="message" role="status"></p>
+          </form>
+          <div class="profile-summary" hidden="" id="profileSummary"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><span>Made for connections that mean something.</span
+      ><span>© 2026 ASync · Concept prototype</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

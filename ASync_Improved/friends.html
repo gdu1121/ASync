@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta
+      content="ASync helps you find people through shared interests, intentions, and experiences."
+      name="description"
+    />
+    <title>ASync | Friends</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><button
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="menu-btn"
+        id="menuBtn"
+      >
+        ☰
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="home.html">Home</a
+        ><a aria-current="page" href="friends.html">Friends</a
+        ><a href="dating.html">Dating</a
+        ><a href="communities.html">Communities</a
+        ><a href="messages.html">Messages</a><a href="features.html">Features</a
+        ><a href="signup.html">Join</a
+        ><button
+          aria-label="Toggle dark mode"
+          class="theme-btn"
+          id="darkModeBtn"
+        >
+          ☾
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="section page-banner">
+        <div class="page-highlight">
+          <div>
+            <span class="kicker">GOOD ENERGY</span>
+            <h2>Connection starts with overlap.</h2>
+          </div>
+          <div class="highlight-stats">
+            <div class="stat-card">
+              <strong>4.9/5</strong>
+              <span>vibe match energy</span>
+            </div>
+            <div class="stat-card">
+              <strong>Top 3</strong>
+              <span>shared-interest picks</span>
+            </div>
+            <div class="stat-card">
+              <strong>Fast</strong>
+              <span>easy ice-breakers</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section discover" id="discover">
+        <div class="section-heading">
+          <span class="kicker">FRIENDSHIPS · FIND YOUR PEOPLE</span>
+          <h2>Meet your people. <em>Build your circle.</em></h2>
+          <p>
+            Discover friends and activity partners, then continue the
+            conversation in Messages.
+          </p>
+        </div>
+        <div aria-label="Discovery mode" class="mode-switch" role="group">
+          <button
+            aria-pressed="true"
+            class="mode-option active"
+            id="friendsMode"
+            type="button"
+          >
+            <span class="mode-icon">✦</span
+            ><span
+              ><strong>Find friends</strong
+              ><small
+                >Friendships, hobbies &amp; shared experiences</small
+              ></span
+            ></button
+          ><button
+            aria-pressed="false"
+            class="mode-option"
+            id="datingMode"
+            type="button"
+          >
+            <span class="mode-icon">♡</span
+            ><span
+              ><strong>Explore dating</strong
+              ><small>Dating, compatibility &amp; relationships</small></span
+            >
+          </button>
+        </div>
+        <div aria-live="polite" class="mode-intro" id="modeIntro">
+          Friendship space · Meet people to hang out with, learn alongside, or
+          simply talk to.
+        </div>
+        <div class="demo-layout">
+          <aside class="filter-panel">
+            <div class="panel-top">
+              <h3>Your vibe</h3>
+              <span class="demo-badge">LIVE DEMO</span>
+            </div>
+            <label class="field-label" for="connectionGoal"
+              >I'm looking for</label
+            ><select id="connectionGoal">
+              <option value="all">Friends &amp; activity partners</option>
+              <option value="friends">Friendship</option>
+              <option value="activities">Activity partners</option>
+            </select>
+            <div class="field-label">
+              Things I'm into <span id="interestCount">0 selected</span>
+            </div>
+            <div class="chips" id="interestFilters"></div>
+            <button class="text-button" id="resetFilters">
+              ↺ Reset filters
+            </button>
+            <div class="demo-disclaimer">
+              These are fictional example profiles. No accounts or messages are
+              created.
+            </div>
+          </aside>
+          <div class="results">
+            <div class="results-top">
+              <h3 id="resultsHeading">People you might befriend</h3>
+              <span id="resultCount"></span>
+            </div>
+            <div class="profile-grid" id="profileGrid"></div>
+            <div
+              aria-live="polite"
+              class="match-explanation"
+              id="matchExplanation"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><span>Made for connections that mean something.</span
+      ><span>© 2026 ASync · Concept prototype</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

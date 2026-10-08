@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta
+      content="ASync helps you find people through shared interests, intentions, and experiences."
+      name="description"
+    />
+    <title>ASync | Messages</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><button
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="menu-btn"
+        id="menuBtn"
+      >
+        ☰
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="home.html">Home</a><a href="friends.html">Friends</a
+        ><a href="dating.html">Dating</a
+        ><a href="communities.html">Communities</a
+        ><a aria-current="page" href="messages.html">Messages</a
+        ><a href="features.html">Features</a><a href="signup.html">Join</a
+        ><button
+          aria-label="Toggle dark mode"
+          class="theme-btn"
+          id="darkModeBtn"
+        >
+          ☾
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="section page-banner chat-banner">
+        <div class="page-highlight compact">
+          <div>
+            <span class="kicker">PRIVATE &amp; EASY</span>
+            <h2>Keep the good conversations close.</h2>
+          </div>
+          <div class="highlight-stats">
+            <div class="stat-card">
+              <strong>1 place</strong>
+              <span>for your circle</span>
+            </div>
+            <div class="stat-card">
+              <strong>local</strong>
+              <span>demo storage</span>
+            </div>
+            <div class="stat-card">
+              <strong>low pressure</strong>
+              <span>friendly rooms</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chat-section" id="chat">
+        <div class="section-heading">
+          <span class="kicker">YOUR PRIVATE SOCIAL SPACE</span>
+          <h2>Your friends. <em>Your conversations.</em></h2>
+          <p>
+            Your private friend conversations and group rooms, all in one place.
+          </p>
+        </div>
+        <div aria-label="Friends chat demo" class="chat-app">
+          <aside class="chat-sidebar">
+            <div class="chat-sidebar-title">
+              <strong>✳ ASync Chat</strong
+              ><span class="demo-badge">LOCAL DEMO</span>
+            </div>
+            <button class="create-room" id="createRoomBtn" type="button">
+              ＋ Create group room
+            </button>
+            <h3>DIRECT MESSAGES</h3>
+            <div class="chat-room-list" id="friendList"></div>
+            <h3>GROUP ROOMS</h3>
+            <div class="chat-room-list" id="groupList"></div>
+            <p class="chat-side-note">
+              Only friends you've added appear here. Conversations are stored in
+              this browser, not sent to anyone.
+            </p>
+          </aside>
+          <div class="chat-main">
+            <header class="chat-header">
+              <div>
+                <strong id="chatTitle">Choose a conversation</strong
+                ><small id="chatSubtitle">Your private space to connect</small>
+              </div>
+              <button
+                class="remove-friend"
+                hidden=""
+                id="removeFriendBtn"
+                type="button"
+              >
+                Remove friend
+              </button>
+            </header>
+            <div
+              aria-label="Conversation messages"
+              aria-live="polite"
+              class="chat-messages"
+              id="chatMessages"
+              role="log"
+            ></div>
+            <form class="chat-compose" id="chatForm">
+              <label class="sr-only" for="chatInput">Write a message</label
+              ><input
+                autocomplete="off"
+                disabled=""
+                id="chatInput"
+                maxlength="500"
+                placeholder="Select a conversation to start chatting..."
+                type="text"
+              /><button disabled="" id="sendChatBtn" type="submit">
+                Send ↗
+              </button>
+            </form>
+          </div>
+        </div>
+        <p class="chat-disclaimer">
+          Prototype: Messages are local to this device. Real-time chat,
+          invitations, moderation and secure accounts require a backend.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <a class="brand" href="home.html"
+        ><span class="brand-icon">✳</span> ASync<span class="brand-dot"
+          >.</span
+        ></a
+      ><span>Made for connections that mean something.</span
+      ><span>© 2026 ASync · Concept prototype</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

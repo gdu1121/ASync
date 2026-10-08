@@ -81,6 +81,24 @@
             <button class="create-room" id="createRoomBtn" type="button">
               ＋ Create group room
             </button>
+            <section aria-labelledby="peopleSearchHeading" class="people-search">
+              <h3 id="peopleSearchHeading">FIND PEOPLE YOU KNOW</h3>
+              <label class="sr-only" for="peopleSearch">Search people by name</label>
+              <input
+                autocomplete="off"
+                id="peopleSearch"
+                placeholder="Search by name..."
+                type="search"
+              />
+              <p class="people-search-note">
+                Search the sample directory and add someone to your friends.
+              </p>
+              <div
+                aria-live="polite"
+                class="people-search-results"
+                id="peopleSearchResults"
+              ></div>
+            </section>
             <h3>DIRECT MESSAGES</h3>
             <div class="chat-room-list" id="friendList"></div>
             <h3>GROUP ROOMS</h3>
@@ -127,6 +145,31 @@
             </form>
           </div>
         </div>
+        <dialog aria-labelledby="groupDialogTitle" class="group-dialog" id="groupDialog">
+          <form id="groupForm">
+            <h3 id="groupDialogTitle">Create a group chat</h3>
+            <p>Choose a name and at least one friend to include.</p>
+            <label for="groupName">Group name</label>
+            <input
+              id="groupName"
+              maxlength="35"
+              placeholder="e.g. Weekend plans"
+              required
+              type="text"
+            />
+            <fieldset class="group-members">
+              <legend>Friends in this group</legend>
+              <div id="groupMemberChoices"></div>
+            </fieldset>
+            <p aria-live="polite" class="group-form-message" id="groupFormMessage"></p>
+            <div class="group-dialog-actions">
+              <button class="group-cancel" id="cancelGroupBtn" type="button">
+                Cancel
+              </button>
+              <button class="create-room" type="submit">Create group</button>
+            </div>
+          </form>
+        </dialog>
         <p class="chat-disclaimer">
           Prototype: Messages are local to this device. Real-time chat,
           invitations, moderation and secure accounts require a backend.

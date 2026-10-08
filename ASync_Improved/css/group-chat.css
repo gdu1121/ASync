@@ -1,0 +1,152 @@
+.people-search {
+  margin-top: 22px;
+}
+.people-search h3 {
+  margin-top: 0;
+}
+.people-search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #59616d;
+  border-radius: 9px;
+  background: #34313c;
+  color: #fff;
+}
+.people-search input::placeholder {
+  color: #c4bdcb;
+}
+.people-search-note,
+.people-search-empty {
+  color: #c4bdcb;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.people-search-note {
+  margin: 7px 2px;
+}
+.people-search-empty {
+  margin: 10px 2px;
+}
+.people-search-results {
+  display: grid;
+  gap: 4px;
+}
+.people-search-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 2px;
+  color: #f3eef6;
+  font-size: 13px;
+}
+.people-search-result button {
+  flex: 0 0 auto;
+  border: 1px solid #667083;
+  border-radius: 7px;
+  padding: 5px 8px;
+  background: #344254;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+.people-search-result button:disabled {
+  border-color: transparent;
+  background: transparent;
+  color: #b5c9bc;
+  cursor: default;
+}
+.group-dialog {
+  width: min(440px, calc(100% - 32px));
+  max-height: min(80vh, 620px);
+  padding: 26px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+.group-dialog::backdrop {
+  background: rgba(8, 15, 25, 0.68);
+}
+.group-dialog h3 {
+  margin: 0;
+  font-size: 22px;
+}
+.group-dialog p {
+  color: var(--muted);
+}
+.group-dialog form > label {
+  display: block;
+  margin: 16px 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.group-dialog form > input {
+  width: 100%;
+  background: var(--bg);
+  color: var(--ink);
+}
+.group-members {
+  margin: 18px 0 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.group-members legend {
+  padding: 0 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.group-members label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.group-members input {
+  width: auto;
+  accent-color: var(--accent);
+}
+.group-dialog .group-form-message {
+  min-height: 1.5em;
+  margin: 8px 0;
+  color: #b42345;
+  font-size: 13px;
+}
+.group-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.group-dialog-actions button {
+  width: auto;
+  padding: 10px 14px;
+}
+.group-dialog .group-cancel {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+.dark-mode .group-dialog {
+  border-color: var(--line);
+}
+.dark-mode .group-dialog form > input {
+  border-color: var(--line);
+  background: #101d2a;
+  color: var(--ink);
+}
+.dark-mode .group-dialog .group-form-message {
+  color: #ff9ab1;
+}
+@media (max-width: 720px) {
+  .people-search {
+    max-width: 440px;
+  }
+}

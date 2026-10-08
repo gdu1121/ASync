@@ -1,0 +1,254 @@
+/* Friends-only messaging workspace */
+.chat-section {
+  background: var(--surface, #faf7f8);
+}
+.chat-app {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  max-width: 1120px;
+  margin: 0 auto;
+  border: 1px solid #e5dce2;
+  border-radius: 22px;
+  overflow: hidden;
+  min-height: 520px;
+  background: #fff;
+  box-shadow: 0 15px 45px #29101a12;
+}
+.chat-sidebar {
+  background: #27232e;
+  color: #fff;
+  padding: 22px 14px;
+}
+.chat-sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.chat-sidebar .demo-badge {
+  font-size: 9px;
+}
+.chat-sidebar h3 {
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  color: #bbb0c2;
+  margin: 24px 8px 10px;
+}
+.create-room {
+  background: #ff5279;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+}
+.chat-room-list {
+  display: grid;
+  gap: 5px;
+}
+.room-button {
+  background: transparent;
+  color: #e5dfe8;
+  text-align: left;
+  padding: 12px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.room-button:hover,
+.room-button.selected {
+  background: #4b4054;
+  color: white;
+}
+.chat-side-note {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #bdb3c4;
+  margin: 30px 8px;
+}
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #fff;
+  color: #2b2430;
+}
+.chat-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee5e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.chat-header strong {
+  display: block;
+  font-size: 18px;
+}
+.chat-header small {
+  display: block;
+  color: #877d87;
+  margin-top: 4px;
+}
+.remove-friend {
+  background: transparent;
+  border: 1px solid #ddd0d7;
+  border-radius: 8px;
+  padding: 8px;
+  color: #9e3953;
+  cursor: pointer;
+}
+.chat-messages {
+  height: 390px;
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+.chat-bubble {
+  max-width: min(78%, 470px);
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: #f2edf0;
+  overflow-wrap: anywhere;
+}
+.chat-bubble strong {
+  font-size: 12px;
+  color: #a33457;
+}
+.chat-bubble p {
+  margin: 5px 0 0;
+  line-height: 1.5;
+}
+.chat-bubble.mine {
+  align-self: flex-end;
+  background: #ffdae3;
+}
+.chat-bubble.system {
+  align-self: center;
+  background: transparent;
+  color: #837984;
+  font-size: 12px;
+  text-align: center;
+}
+.chat-empty {
+  margin: auto;
+  text-align: center;
+  color: #847a86;
+  max-width: 300px;
+}
+.chat-compose {
+  display: flex;
+  gap: 10px;
+  padding: 18px 22px;
+  border-top: 1px solid #eee5e9;
+}
+.chat-compose input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #ded5dc;
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+}
+.chat-compose button {
+  border: 0;
+  border-radius: 10px;
+  background: #ff5279;
+  color: white;
+  padding: 0 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.chat-compose button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.add-friend-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f2a2b7;
+  background: #fff0f4;
+  color: #a72f52;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.chat-disclaimer {
+  max-width: 1120px;
+  margin: 16px auto 0;
+  color: #847a86;
+  font-size: 13px;
+}
+.dark-mode .chat-app,
+.dark-mode .chat-main {
+  background: #241f29;
+  color: #fff;
+}
+.dark-mode .chat-header,
+.dark-mode .chat-compose {
+  border-color: #49404b;
+}
+.dark-mode .chat-bubble {
+  background: #413644;
+}
+.dark-mode .chat-bubble.mine {
+  background: #69354c;
+}
+.dark-mode .chat-compose input {
+  background: #312a36;
+  color: white;
+  border-color: #514653;
+}
+@media (max-width: 720px) {
+  .chat-app {
+    grid-template-columns: 1fr;
+  }
+  .chat-sidebar {
+    padding: 16px;
+  }
+  .chat-room-list {
+    display: flex;
+    overflow: auto;
+  }
+  .room-button {
+    white-space: nowrap;
+  }
+  .chat-sidebar h3 {
+    margin: 12px 6px;
+  }
+  .chat-side-note {
+    display: none;
+  }
+  .chat-messages {
+    height: 340px;
+  }
+  .chat-header {
+    padding: 15px;
+  }
+  .chat-compose {
+    padding: 12px;
+  }
+  .chat-compose button {
+    padding: 0 14px;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

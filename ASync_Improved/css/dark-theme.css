@@ -1,0 +1,74 @@
+.dark-mode {
+  --bg: #0d1720;
+  --surface: #172737;
+  --ink: #edf6ff;
+  --muted: #c4cfdd;
+  --line: #36506c;
+  --soft: #203248;
+  --shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+.dark-mode .hero {
+  background:
+    radial-gradient(circle at 80% 45%, rgba(29, 120, 142, 0.35), transparent 42%),
+    linear-gradient(115deg, #0e1a2a, #172b3f);
+}
+.dark-mode .hero p,
+.dark-mode .hero-note {
+  color: var(--muted);
+}
+.dark-mode .ghost,
+.dark-mode .float-tag {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.dark-mode .discover {
+  background: #111f2d;
+}
+.dark-mode .signup-section {
+  background: linear-gradient(115deg, #0d1d2a, #1d2e46);
+}
+.dark-mode .signup-copy h2,
+.dark-mode .signup-copy p,
+.dark-mode .signup-copy .kicker,
+.dark-mode .trust-item strong,
+.dark-mode .trust-item small,
+.dark-mode .privacy-note,
+.dark-mode .signup h3,
+.dark-mode .form-subtitle,
+.dark-mode .signup label,
+.dark-mode .signup label small,
+.dark-mode .intent-fieldset legend,
+.dark-mode .intent-fieldset label,
+.dark-mode #strengthText,
+.dark-mode .profile-summary {
+  color: var(--ink);
+}
+.dark-mode .signup {
+  background: rgba(20, 31, 45, 0.94);
+  border: 1px solid var(--line);
+}
+.dark-mode .signup input,
+.dark-mode .password-container button,
+.dark-mode .profile-summary {
+  background: rgba(7, 14, 21, 0.7);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.dark-mode .signup input::placeholder,
+.dark-mode .password-container button {
+  color: #adc0d5;
+}
+.dark-mode .intent-fieldset {
+  border-color: var(--line);
+}
+.dark-mode .success {
+  color: #8ae6b4;
+}
+.dark-mode .error {
+  color: #ff9ab1;
+}
+.dark-mode .demo-badge {
+  background: #224056;
+  color: #9fe0f4;
+}

@@ -1,0 +1,336 @@
+/* ASync's shared social identity: teal, blue and violet instead of romance-first pink */
+:root {
+  --bg: #f5f8fc;
+  --surface: #ffffff;
+  --ink: #17283e;
+  --muted: #5c7085;
+  --accent: #147d91;
+  --accent2: #5965cb;
+  --line: #dfe8f0;
+  --soft: #eaf4f7;
+  --shadow: 0 18px 50px rgba(20, 55, 87, 0.09);
+}
+.nav {
+  box-shadow: 0 3px 18px rgba(26, 58, 88, 0.035);
+}
+.hero {
+  background:
+    radial-gradient(circle at 82% 40%, #c9e8ef 0, transparent 40%),
+    radial-gradient(circle at 25% 90%, #e1e9ff 0, transparent 40%),
+    linear-gradient(115deg, #f5fbfc, #f1f5ff);
+}
+.hero p {
+  color: var(--muted);
+}
+.hero-note {
+  color: var(--muted);
+}
+.ghost {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.primary:hover {
+  background: #096276;
+}
+.orbit {
+  border-color: #a4cddc;
+}
+.orbit-two {
+  border-color: #b8bdf1;
+}
+.connection-symbol {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  display: grid;
+  place-items: center;
+}
+.connection-center {
+  display: grid;
+  place-items: center;
+  width: 145px;
+  height: 145px;
+  border-radius: 36px;
+  background: linear-gradient(145deg, #167f97, #5b69cb);
+  color: white;
+  font-size: 96px;
+  box-shadow: 0 24px 55px #246b9840;
+}
+.connection-node {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border: 2px solid #d9e9f2;
+  border-radius: 20px;
+  background: white;
+  color: #147d91;
+  font-size: 29px;
+  box-shadow: 0 10px 24px #17395720;
+}
+.node-a {
+  top: 0;
+  left: 14px;
+}
+.node-b {
+  top: 5px;
+  right: 6px;
+}
+.node-c {
+  bottom: 0;
+  left: 18px;
+}
+.node-d {
+  bottom: 0;
+  right: 14px;
+}
+.discover,
+.chat-section {
+  background: #edf4f9;
+}
+.signup-section {
+  background: linear-gradient(115deg, #e6f5f7, #edf0ff);
+}
+.demo-badge {
+  background: #e3f3f5;
+  color: #14687b;
+}
+.profile-avatar,
+.mode-icon {
+  background: #e3f3f5;
+  color: #147d91;
+}
+.mode-option {
+  background: var(--surface);
+  border-color: var(--line);
+}
+.mode-option.active {
+  border-color: var(--accent);
+  box-shadow: 0 8px 28px #147d9120;
+}
+.choice-card {
+  background: var(--surface);
+  border-color: var(--line);
+}
+.choice-card strong {
+  color: var(--accent);
+}
+.create-room,
+.chat-compose button {
+  background: var(--accent);
+}
+.chat-sidebar {
+  background: #1b3046;
+}
+.chat-sidebar h3 {
+  color: #a8c4d8;
+}
+.chat-side-note {
+  color: #b3c9d8;
+}
+.room-button.selected,
+.room-button:hover {
+  background: #31556a;
+}
+.chat-app {
+  border-color: var(--line);
+}
+.chat-bubble {
+  background: #edf3f8;
+}
+.chat-bubble.mine {
+  background: #d8eff1;
+}
+.chat-bubble strong {
+  color: #176f83;
+}
+.add-friend-btn {
+  border-color: #9ccdd5;
+  background: #e7f5f7;
+  color: #126a7c;
+}
+.remove-friend {
+  color: #a74343;
+}
+.dark-mode .page-highlight {
+  background: linear-gradient(135deg, #142638, #1b2d45);
+  border-color: var(--line);
+}
+.dark-mode .page-highlight .kicker {
+  color: #75d9e9;
+}
+.dark-mode .page-highlight h2,
+.dark-mode .page-highlight .stat-card strong {
+  color: var(--ink);
+}
+.dark-mode .page-highlight .stat-card {
+  background: rgba(7, 14, 21, 0.55);
+  border-color: rgba(148, 163, 184, 0.24);
+}
+.dark-mode .page-highlight .stat-card span {
+  color: var(--muted);
+}
+.dark-mode .kicker,
+.dark-mode h1 em,
+.dark-mode h2 em,
+.dark-mode .feature-icon,
+.dark-mode .community-topic {
+  color: #75d9e9;
+}
+.dark-mode .community-spotlight {
+  background: linear-gradient(135deg, #142638, #1b2d45);
+  border-color: var(--line);
+}
+.dark-mode .spotlight-tags span,
+.dark-mode .spotlight-card {
+  background: #172737;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.dark-mode .spotlight-ribbon {
+  background: rgba(92, 194, 164, 0.18);
+  color: #8ce2c2;
+}
+.dark-mode .mini-metric,
+.dark-mode .mini-metric.alt {
+  background: #1b2d40;
+  border-color: var(--line);
+}
+.dark-mode .community-card {
+  border-color: var(--line);
+}
+.dark-mode {
+  --bg: #0d1720;
+  --surface: #172737;
+  --ink: #edf6ff;
+  --muted: #c4cfdd;
+  --line: #36506c;
+  --soft: #203248;
+  --shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+.dark-mode .nav {
+  background: rgba(16, 23, 31, 0.82);
+  border-bottom-color: rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+}
+.dark-mode .brand,
+.dark-mode .nav-links a,
+.dark-mode .nav-links a:hover,
+.dark-mode .nav-links a[aria-current="page"],
+.dark-mode .theme-btn,
+.dark-mode .menu-btn {
+  color: #edf6ff;
+}
+.dark-mode .theme-btn,
+.dark-mode .menu-btn {
+  background: rgba(148, 163, 184, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.2);
+}
+.dark-mode .hero {
+  background:
+    radial-gradient(circle at 80% 45%, rgba(29, 120, 142, 0.35), transparent 42%),
+    linear-gradient(115deg, #0e1a2a, #172b3f);
+}
+.dark-mode .discover,
+.dark-mode .chat-section {
+  background: #111f2d;
+}
+.dark-mode .signup-section {
+  background: linear-gradient(115deg, #0d1d2a, #1d2e46);
+}
+.dark-mode .signup-copy h2,
+.dark-mode .signup-copy p,
+.dark-mode .signup-copy .kicker,
+.dark-mode .trust-item strong,
+.dark-mode .trust-item small,
+.dark-mode .privacy-note,
+.dark-mode .signup h3,
+.dark-mode .form-subtitle,
+.dark-mode .signup label,
+.dark-mode .signup label small,
+.dark-mode .intent-fieldset legend,
+.dark-mode .intent-fieldset label,
+.dark-mode #strengthText,
+.dark-mode .profile-summary {
+  color: var(--ink);
+}
+.dark-mode .signup {
+  background: rgba(20, 31, 45, 0.94);
+  border: 1px solid var(--line);
+}
+.dark-mode .signup input,
+.dark-mode .password-container button,
+.dark-mode .profile-summary {
+  background: rgba(7, 14, 21, 0.7);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.dark-mode .signup input::placeholder,
+.dark-mode .password-container button {
+  color: #adc0d5;
+}
+.dark-mode .intent-fieldset {
+  border-color: var(--line);
+}
+.dark-mode .success {
+  color: #8ae6b4;
+}
+.dark-mode .error {
+  color: #ff9ab1;
+}
+.dark-mode .demo-badge {
+  background: #224056;
+  color: #9fe0f4;
+}
+.dark-mode .connection-node {
+  background: #20354a;
+  color: #a8e6ef;
+  border-color: #36566c;
+}
+.dark-mode .mode-option {
+  background: var(--surface);
+}
+.dark-mode .chat-app,
+.dark-mode .chat-main {
+  background: #1b2a3c;
+  color: var(--ink);
+}
+.dark-mode .chat-sidebar {
+  background: #101e2d;
+}
+.dark-mode .chat-bubble {
+  background: #2b4054;
+}
+.dark-mode .chat-bubble.mine {
+  background: #1c5a68;
+}
+.dark-mode .chat-bubble strong {
+  color: #8ee2f1;
+}
+.dark-mode .nav {
+  background: rgba(16, 23, 31, 0.82);
+  border-bottom-color: rgba(148, 163, 184, 0.16);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+}
+.dark-mode .brand,
+.dark-mode .nav-links a,
+.dark-mode .nav-links a:hover,
+.dark-mode .nav-links a[aria-current="page"],
+.dark-mode .theme-btn,
+.dark-mode .menu-btn {
+  color: #edf6ff;
+}
+.dark-mode .theme-btn,
+.dark-mode .menu-btn {
+  background: rgba(148, 163, 184, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.2);
+}
+@media (max-width: 900px) {
+  .connection-symbol {
+    transform: scale(0.76);
+  }
+}

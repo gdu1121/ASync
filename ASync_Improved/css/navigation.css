@@ -1,0 +1,41 @@
+/* Multi-page navigation */
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.page-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.choice-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card, #fff);
+  border: 1px solid #e5dfe7;
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 8px 28px #0000000a;
+}
+.choice-card span {
+  font-size: 36px;
+}
+.choice-card h3 {
+  margin: 16px 0 10px;
+}
+.choice-card p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.choice-card strong {
+  color: #e54775;
+}
+@media (max-width: 750px) {
+  .page-choices {
+    grid-template-columns: 1fr;
+  }
+}
+

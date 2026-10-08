@@ -1,0 +1,99 @@
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-art {
+    height: 300px;
+  }
+  .orbit {
+    width: 260px;
+    height: 260px;
+  }
+  .orbit-two {
+    width: 190px;
+    height: 190px;
+  }
+  .heart-mark {
+    font-size: 150px;
+  }
+  .stats-strip,
+  .story-grid,
+  .feature-showcase,
+  .demo-layout,
+  .signup-section,
+  .page-highlight {
+    grid-template-columns: 1fr;
+  }
+  .feature-grid,
+  .page-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cta-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .signup {
+    max-width: 540px;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 650px) {
+  .nav {
+    height: 70px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    padding: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: var(--shadow);
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .hero {
+    padding-top: 65px;
+  }
+  .hero-art {
+    display: none;
+  }
+  h1 {
+    letter-spacing: -2px;
+  }
+  .section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .steps,
+  .feature-grid,
+  .profile-grid,
+  .stats-strip,
+  .highlight-stats,
+  .page-choices {
+    grid-template-columns: 1fr;
+  }
+  .signup {
+    padding: 24px;
+  }
+  .cta-panel {
+    padding: 24px 20px;
+  }
+  .story-card,
+  .feature-showcase {
+    padding: 20px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

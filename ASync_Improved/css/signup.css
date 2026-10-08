@@ -1,0 +1,88 @@
+.signup-section {
+  background: linear-gradient(115deg, #fff0f5, #f5edff);
+  display: grid;
+  grid-template-columns: 1fr 430px;
+  gap: 65px;
+  align-items: center;
+}
+.signup-copy h2 {
+  max-width: 540px;
+}
+.privacy-note {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #836b7d;
+}
+.signup {
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+}
+.signup h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.form-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 4px 0 22px;
+}
+.signup label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 14px 0 7px;
+}
+.signup label small {
+  font-weight: 400;
+  color: var(--muted);
+}
+.password-container {
+  display: flex;
+  gap: 7px;
+}
+.password-container button {
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--ink);
+  border-radius: 9px;
+  padding: 0 14px;
+}
+.full {
+  width: 100%;
+  margin-top: 18px;
+}
+.success {
+  color: #268354;
+}
+.error {
+  color: #c83754;
+}
+#message,
+#strengthText {
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+}
+.profile-summary {
+  margin-top: 16px;
+  background: var(--soft);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+footer {
+  padding: 30px 5%;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: var(--muted);
+  font-size: 12px;
+}
+footer .brand {
+  color: var(--ink);
+}

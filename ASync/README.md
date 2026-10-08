@@ -1,6 +1,6 @@
 # ASync
 
-ASync is a polished, multi-page social platform prototype designed to help people discover friends, communities, and romantic connections through shared interests and intentional communication. The project is built as a front-end-only experience and focuses on layout, interaction design, and product storytelling rather than a live backend or real user database.
+ASync is a social networking platform designed to combine friendships, communities, and romantic connections. The project was developed using HTML, CSS, and JavaScript, with GitHub Copilot assisting in portions of the implementation and debugging. The project is built as a front-end-only experience and focuses on layout, interaction design, and product storytelling rather than a live backend or real user database.
 
 ## Overview
 
